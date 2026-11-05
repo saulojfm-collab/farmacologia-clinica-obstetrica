@@ -7,7 +7,7 @@ Branch: `revisao-didatica-pk-pd`. Aguardando aprovação do professor antes de i
 - Revisão básica de farmacocinética e farmacodinâmica organizada na sequência das duas apresentações fornecidas pelo professor, com imagens identificadas por slide.
 - Nove alterações fisiológicas/hormonais, com mecanismo, medicamento e cuidado de enfermagem.
 - Simuladores conceituais de exposição e de resposta, sem cálculo de doses clínicas.
-- Explicações dos termos técnicos entre parênteses no conteúdo textual.
+- Explicações pontuais dos termos especializados menos familiares, sem expandir vocabulário clínico comum.
 - Antidepressivos e outras terapias contínuas: tireoide, asma e hipertensão.
 - Seis histórias para grupos de especialistas e retorno à equipe de origem.
 - Cinco casos fictícios ilustrados para cartolina FARMA, avaliação técnica por post-its, revisão e debriefing.
