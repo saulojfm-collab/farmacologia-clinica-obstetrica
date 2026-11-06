@@ -1,21 +1,15 @@
 # Prévia da revisão didática
 
-Branch: `revisao-didatica-pk-pd`. Aguardando aprovação do professor antes de integrar à `main`.
+Branch revisao-didatica-pk-pd; integração à main somente após aprovação do professor.
 
-## O que mudou
+- Laboratório imediatamente após a revisão PK/PD.
+- Gestante fictícia gerada por IA, com nove pontos relacionados a regiões e sistemas; localização esquemática explicitada.
+- Explicação entre parênteses das CYP removida.
+- Desenvolvimento fetal: Figura 59-1 do Katzung, síntese da Tabela 59-1 e classificação histórica A–X da Tabela 59-2, contextualizada com a rotulagem narrativa atual da FDA.
+- Jigsaw: histórias, discussão entre especialistas e retorno à equipe, com roteiro para anotações no caderno.
+- Domingo: cinco histórias ampliadas, liberadas por código do professor. FARMA orienta cinco colunas da cartolina, sem cálculos de administração, respostas digitais ou pontuação.
+- Avaliação técnica com post-its físicos e debriefing. Atribuição de nota feita manualmente pelo professor.
 
-- Revisão básica de farmacocinética e farmacodinâmica organizada na sequência das duas apresentações fornecidas pelo professor, com imagens identificadas por slide.
-- Nove alterações fisiológicas/hormonais, com mecanismo, medicamento e cuidado de enfermagem.
-- Simuladores conceituais de exposição e de resposta, sem cálculo de doses clínicas.
-- Explicações pontuais dos termos especializados menos familiares, sem expandir vocabulário clínico comum.
-- Antidepressivos e outras terapias contínuas: tireoide, asma e hipertensão.
-- Seis histórias para grupos de especialistas e retorno à equipe de origem.
-- Cinco casos fictícios ilustrados para cartolina FARMA, avaliação técnica por post-its, revisão e debriefing.
+O código, os casos completos e as intervenções docentes ficam no guia local Acesso-docente-domingo.md, fora da hospedagem. A proteção é da nova versão ampliada; não apaga versões anteriores nem impede cópias após liberação.
 
-O roteiro FARMA é educacional, não um protocolo clínico validado. Dados novos e pontos esperados do docente ficam em arquivo local separado, não incluído neste repositório público. A atividade usa dados específicos, mudanças de cenário e defesa individual; não promete impedir totalmente uso de IA.
-
-## Abrir e conferir
-
-Abrir `index.html` localmente com os arquivos e a pasta `assets` juntos. A prévia privada vinculada à revisão é entregue no chat ao professor. A hospedagem pública principal não foi alterada.
-
-Verificações realizadas: sintaxe dos arquivos, renderização das 11 seções, presença dos exemplos em nove alterações, seis casos de especialistas e cinco casos de avaliação, pesos da rubrica, limites e nota máxima. Conferência de imagem e interações na prévia web antes da entrega.
+Validação: sintaxe JavaScript; ordem da navegação; ausência de formulários de respostas e pontuação nas atividades revisadas; rejeição de código incorreto e abertura dos cinco casos com código correto; conferência visual local.
