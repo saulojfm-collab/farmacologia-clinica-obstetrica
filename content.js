@@ -43,9 +43,104 @@ const cases=[
 {drug:'Ferro oral',title:'Adesão é mais que tomar comprimido',vignette:'Gestante de 22 semanas com anemia em tratamento relata constipação, náusea e uso irregular do ferro. Toma o produto junto com suplemento de cálcio e não sabe a quantidade de ferro elementar. Diz que pensa em abandonar o tratamento.',task:'Explique o mecanismo que pode reduzir a resposta e produza uma orientação acessível, incluindo plano de acompanhamento.',key:'Investigar dose elementar prescrita, regime, produto, horários, interações, tolerância e barreiras de acesso. Discutir separação do cálcio e outras interações conforme protocolo e estratégia de tolerabilidade com a equipe. Usar escuta e confirmação de compreensão. Reavaliar resposta hematológica e causa da anemia, evitando culpabilização e ajuste por conta própria.',trap:'Não responder apenas “tem que tomar” nem confundir miligramas do sal com miligramas de ferro elementar.',ref:'katz'}
 ];
 const quiz=[
-{q:'A albumina caiu e o nível total de um fármaco muito ligado também caiu. A melhor interpretação é:',a:['Aumentar a dose automaticamente.','Relacionar fração/concentração livre, clínica e depuração.','Suspender todos os medicamentos ligados à albumina.'],correct:1,why:'O nível total isolado pode não representar a exposição livre. Avaliar contexto, sintomas e monitorização específica.'},
-{q:'Se apenas o Vd aumenta, mantendo dose IV e CL constantes no modelo de um compartimento:',a:['Pico inicial cai e meia-vida aumenta; AUC permanece igual.','AUC obrigatoriamente aumenta.','Pico aumenta e meia-vida diminui.'],correct:0,why:'C0 = dose/Vd; t½ = 0,693 × Vd/CL; AUC = dose/CL. Observe a mesma relação no simulador.'},
-{q:'Gestante com oligúria, depressão respiratória e reflexos abolidos durante magnésio:',a:['É uma adaptação esperada do terceiro trimestre.','Basta aguardar o resultado do laboratório.','Suspeitar de toxicidade e iniciar resposta imediata.'],correct:2,why:'A associação é uma emergência. Interromper a infusão, acionar a equipe e apoiar funções vitais conforme protocolo.'},
-{q:'Uma informação indispensável sobre enoxaparina antes de discutir anestesia neuraxial é:',a:['Cor da seringa utilizada.','Horário exato da última dose e regime utilizado.','Apenas o trimestre.'],correct:1,why:'Regime, tempo desde a última administração e função renal ajudam a equipe a avaliar segurança; seguir protocolo específico.'},
-{q:'Uma categoria histórica B na bula significa:',a:['Garantia de ausência de risco.','Autorização de uso em qualquer dose.','Informação insuficiente para decidir sem contexto.'],correct:2,why:'A avaliação requer indicação, evidências, dose, duração, momento da exposição e risco da doença não tratada.'}
+  {
+    "q": "Durante o pré-natal de uma gestante em tratamento com um anticonvulsivante muito ligado à albumina, a equipe identifica redução da albumina e da concentração plasmática total do medicamento. A mulher não relata novas crises nem sinais de toxicidade. Um integrante propõe solicitar aumento da dose apenas para recuperar o valor total anterior. Considerando as alterações da distribuição e a segurança do cuidado, a conduta mais adequada da enfermagem é:",
+    "a": [
+      "Orientar a interrupção do tratamento até a normalização da albumina, para reduzir a passagem placentária.",
+      "Interpretar a queda do nível total como falha terapêutica e antecipar a próxima administração prescrita.",
+      "Relacionar o resultado à evolução clínica, à ligação proteica e à depuração, comunicando a necessidade de avaliação específica, inclusive da concentração livre quando indicada.",
+      "Considerar que a redução da albumina impede o medicamento de alcançar seu alvo e solicitar substituição por outro da mesma classe.",
+      "Atribuir o resultado exclusivamente à baixa adesão e concentrar a entrevista na confirmação das doses esquecidas."
+    ],
+    "correct": 2,
+    "why": "A concentração total reúne as frações ligada e livre. A redução da albumina pode mudar sua interpretação, mas a exposição livre também depende da depuração. O nível total isolado não justifica ajuste de dose.",
+    "comments": [
+      "A interrupção pode descompensar a doença; albumina baixa não é, isoladamente, indicação de suspensão.",
+      "O resultado total isolado não demonstra falha e não autoriza antecipar doses.",
+      "A alternativa integra dados clínicos e farmacocinéticos antes de qualquer mudança prescrita.",
+      "A fração livre pode alcançar o alvo; a queda da albumina não bloqueia essa chegada.",
+      "A adesão deve ser investigada sem presumir que seja a única explicação."
+    ],
+    "ref": "Katzung, Farmacologia básica e clínica, capítulo 59; revisão de distribuição e ligação proteica das aulas do professor."
+  },
+  {
+    "q": "Em uma simulação didática, duas condições recebem a mesma dose intravenosa de um fármaco com eliminação linear, em modelo de um compartimento. Na segunda condição, apenas o volume de distribuição aumenta; a depuração permanece constante. A estudante observa uma curva com pico inicial menor e declínio mais prolongado. Qual interpretação explica corretamente esse resultado?",
+    "a": [
+      "A concentração inicial diminui, a meia-vida aumenta e a área sob a curva permanece igual.",
+      "A concentração inicial diminui, a meia-vida permanece igual e a área sob a curva aumenta.",
+      "A concentração inicial permanece igual, a meia-vida diminui e a área sob a curva aumenta.",
+      "A concentração inicial aumenta, a meia-vida aumenta e a área sob a curva diminui.",
+      "A concentração inicial diminui, a meia-vida diminui e a área sob a curva permanece igual."
+    ],
+    "correct": 0,
+    "why": "Nesse modelo, C0 = dose/Vd, meia-vida = 0,693 × Vd/CL e AUC = dose/CL. O aumento isolado de Vd reduz C0 e prolonga a meia-vida, sem alterar a exposição total medida pela AUC.",
+    "comments": [
+      "As três relações são coerentes com as condições explícitas do modelo.",
+      "A meia-vida depende de Vd; AUC não aumenta se dose e depuração permanecem constantes.",
+      "Com Vd maior, a concentração inicial cai e a meia-vida aumenta.",
+      "A concentração inicial varia inversamente com Vd e a AUC permanece constante.",
+      "Vd maior prolonga, em vez de reduzir, a meia-vida quando a depuração não muda."
+    ],
+    "ref": "Aulas de Farmacocinética do Prof. Dr. Saulo Mendes; equações e condições do laboratório conceitual do site."
+  },
+  {
+    "q": "Uma gestante com pré-eclâmpsia recebe sulfato de magnésio por infusão. Na avaliação de enfermagem, apresenta frequência respiratória de 10 incursões por minuto, reflexos patelares ausentes e redução importante da diurese. O resultado laboratorial ainda não está disponível. Considerando a segurança medicamentosa e a eliminação renal do magnésio, qual ação deve ser priorizada?",
+    "a": [
+      "Manter a infusão e repetir a avaliação após a próxima coleta, pois a concentração sérica define sozinha a toxicidade.",
+      "Diminuir a oferta de oxigênio para evitar interferência na avaliação do padrão respiratório.",
+      "Registrar os achados como efeitos esperados e concentrar a vigilância na pressão arterial.",
+      "Administrar a próxima dose mais cedo para compensar possível perda urinária do medicamento.",
+      "Interromper a infusão, acionar imediatamente a equipe e iniciar suporte respiratório e manejo da suspeita de toxicidade conforme protocolo, sem aguardar o exame."
+    ],
+    "correct": 4,
+    "why": "Depressão respiratória, perda dos reflexos e redução da eliminação urinária exigem resposta imediata à suspeita de toxicidade. A concentração sérica complementa a avaliação, sem substituir os sinais clínicos.",
+    "comments": [
+      "Aguardar o exame mantém uma exposição potencialmente perigosa diante de sinais clínicos graves.",
+      "A prioridade é assegurar ventilação e oxigenação, conforme a avaliação e o protocolo.",
+      "Esses achados não devem ser normalizados como adaptação da gestação.",
+      "Diurese reduzida pode comprometer a eliminação; antecipar dose aumenta o risco.",
+      "A alternativa reúne interrupção da exposição, acionamento da equipe e suporte imediato."
+    ],
+    "ref": "AHRQ. Safe Medication Administration: Magnesium Sulfate. https://www.ahrq.gov/patient-safety/settings/labor-delivery/perinatal-care/modules/strategies/medication/tool-safe-mgso4.html"
+  },
+  {
+    "q": "Uma gestante em uso de enoxaparina chega à maternidade em trabalho de parto e solicita analgesia. Ela informa que aplicou a medicação “hoje cedo”, mas não sabe dizer o horário nem se o esquema é preventivo ou terapêutico. A equipe avalia a possibilidade de procedimento neuraxial (próximo aos nervos da coluna). Qual contribuição da enfermagem oferece a informação mais relevante para essa decisão?",
+    "a": [
+      "Confirmar apenas a idade gestacional, pois o trimestre determina o intervalo de segurança após qualquer dose.",
+      "Conferir dose, indicação, regime e horário exato da última administração, além de dados da função renal e outros fatores de sangramento, comunicando-os à equipe responsável.",
+      "Classificar o procedimento como seguro porque a enoxaparina não atravessa a placenta em quantidade clinicamente relevante.",
+      "Usar a ausência de hematomas na pele como evidência suficiente para liberar o procedimento.",
+      "Solicitar que a paciente omita definitivamente as próximas doses, independentemente da indicação do tratamento."
+    ],
+    "correct": 1,
+    "why": "O risco de sangramento associado ao procedimento exige avaliação materna específica. Horário, dose, regime, função renal e demais fatores orientam a decisão da equipe segundo o protocolo; passagem placentária não resolve essa questão.",
+    "comments": [
+      "O trimestre não substitui a avaliação do regime e do intervalo desde a última dose.",
+      "A alternativa recupera informações essenciais sem atribuir à enfermagem uma liberação isolada do procedimento.",
+      "A transferência placentária não estabelece a segurança de uma punção na mulher anticoagulada.",
+      "Ausência de hematomas cutâneos não exclui risco de sangramento relacionado ao procedimento.",
+      "Suspensão definitiva e indiscriminada pode expor a mulher ao risco trombótico."
+    ],
+    "ref": "Katzung, capítulo 59; conteúdo de heparinas e segurança periprocedimento da disciplina. A decisão segue protocolo específico de anticoagulação e anestesia do serviço."
+  },
+  {
+    "q": "No primeiro trimestre, uma gestante encontra em uma bula antiga a classificação “categoria B” e conclui que poderá usar o medicamento por conta própria. Na consulta, pergunta se a letra garante ausência de dano ao bebê. Considerando a comunicação de risco e a evolução da rotulagem da FDA, qual resposta é mais adequada?",
+    "a": [
+      "A categoria B garante segurança em seres humanos, desde que o medicamento seja vendido sem receita.",
+      "A letra permite comparar diretamente qualquer medicamento B com qualquer medicamento C, independentemente da indicação.",
+      "A categoria significa que o medicamento só apresenta risco após o nascimento e dispensa análise do período gestacional.",
+      "A classificação é histórica e não garante risco zero; é preciso avaliar indicação, evidências, momento e duração da exposição e risco da doença não tratada, utilizando também a informação narrativa atual.",
+      "A retirada das letras pela FDA significa que todos os medicamentos passaram a ser contraindicados durante a gravidez."
+    ],
+    "correct": 3,
+    "why": "As letras A–X foram retiradas do sistema de rotulagem da FDA por serem simplificadoras. A rotulagem narrativa apresenta síntese de riscos, considerações clínicas e dados; a decisão continua individualizada.",
+    "comments": [
+      "A letra não demonstra ausência de risco em humanos e a forma de venda não define segurança fetal.",
+      "As letras não funcionam como uma escala universal que substitua indicação e evidências.",
+      "O momento da exposição é relevante e não pode ser dispensado pela letra.",
+      "A resposta esclarece a limitação da categoria e organiza os elementos necessários à análise.",
+      "A mudança foi na comunicação da evidência, não uma contraindicação geral de tratamentos."
+    ],
+    "ref": "FDA. Questions and Answers on the Pregnancy and Lactation Labeling Rule. https://www.fda.gov/drugs/labeling-information-drug-products/questions-and-answers-pregnancy-and-lactation-labeling-rule"
+  }
 ];
