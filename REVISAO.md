@@ -13,3 +13,6 @@ Publicação na main autorizada pelo professor. Revisão de acesso: um código �
 O código, os casos completos e as intervenções docentes ficam no guia local Acesso-docente-domingo.md, fora da hospedagem. A proteção é da nova versão ampliada; não apaga versões anteriores nem impede cópias após liberação.
 
 Validação: sintaxe JavaScript; ordem da navegação; ausência de formulários de respostas e pontuação nas atividades revisadas; rejeição de código incorreto e abertura dos cinco casos com código correto; conferência visual local.
+
+
+Domingo: exatamente duas atualizações por personagem, criptografadas e liberadas em sequência por códigos distintos informados pelo professor. Cada etapa é aberta para os cinco casos na aba do aluno; não há sincronização automática entre dispositivos. Os códigos e as orientações docentes ficam no guia local.

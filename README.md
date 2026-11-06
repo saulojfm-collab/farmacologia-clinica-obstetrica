@@ -13,3 +13,6 @@ Os cinco casos ampliados de domingo estão criptografados e incluídos no mesmo 
 Sirva esta pasta por HTTPS ou localhost. A liberação requer um navegador com Web Crypto disponível. Não é necessário Render ou banco de dados.
 
 Referências e atribuições estão na Biblioteca. PDFs completos e guia reservado do professor não integram o repositório. Imagens de terceiros conservam seus direitos; a gestante do mapa é fictícia e gerada por IA. Material educacional: decisões assistenciais dependem de avaliação, prescrição validada e protocolos vigentes.
+
+
+Domingo: exatamente duas atualizações por personagem, criptografadas e liberadas em sequência por códigos distintos informados pelo professor. Cada etapa é aberta para os cinco casos na aba do aluno; não há sincronização automática entre dispositivos. Os códigos e as orientações docentes ficam no guia local.
